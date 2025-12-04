@@ -1,0 +1,21 @@
+
+# Ignore all files ending with .log
+*.log
+
+# Ignore the 'node_modules' directory
+node_modules/
+
+# Ignore a specific file named 'config.json'
+config.json
+
+# Ignore all 'temp' directories anywhere in the project
+**/temp/
+
+# Ignore all files within the 'build' directory
+build/*
+
+# Exclude a specific file from a previously ignored directory
+!build/important_file.txt
+
+
+.env
