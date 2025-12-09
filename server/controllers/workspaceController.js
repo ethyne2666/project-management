@@ -59,7 +59,7 @@ export const addMember = async (req,res) => {
        }
 
        //fetch workspace
-       const workspace = await prisma.workspace.findUnique({where: {id:workspaceId},include: {member: true}})
+       const workspace = await prisma.workspace.findUnique({where: {id:workspaceId},include: {members: true}})
 
        if(!workspace){
         return res.status(404).json({message: "Workspace not found"})
